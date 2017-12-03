@@ -8,6 +8,8 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "apollo-server-restify": "^1.2.0",
+    "graphql": "^0.11.7",
     "restify": "^6.3.4"
   }
 }
