@@ -1,15 +1,23 @@
 {
   "name": "api-sample",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Takamichi-tsutsumi <takamichi_tsutsumi@waku-2.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "build": "babel index.js -d dist",
+    "build:clean": "rm -rf dist",
+    "start": "node dist/index.js",
+    "dev": "babel-node index.js"
   },
   "dependencies": {
     "apollo-server-restify": "^1.2.0",
     "graphql": "^0.11.7",
     "restify": "^6.3.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }

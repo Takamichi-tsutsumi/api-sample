@@ -1,4 +1,4 @@
-const restify = require('restify')
+import restify from 'restify'
 
 const respond = (req, res, next) => {
   res.send({ name: req.params.name })
