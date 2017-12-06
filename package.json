@@ -5,10 +5,11 @@
   "author": "Takamichi-tsutsumi <takamichi_tsutsumi@waku-2.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel index.js -d dist",
+    "build": "babel lib -d dist",
     "build:clean": "rm -rf dist",
-    "start": "node dist/index.js",
-    "dev": "nodemon --watch babel-node index.js"
+    "start": "babel-node lib/index.js",
+    "start:watch": "nodemon --watch lib --exec babel-node lib/index.js",
+    "start:production": "node dist/index.js"
   },
   "dependencies": {
     "apollo-server-restify": "^1.2.0",
