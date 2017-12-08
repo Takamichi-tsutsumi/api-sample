@@ -9,7 +9,8 @@
     "build:clean": "rm -rf dist",
     "start": "babel-node lib/index.js",
     "start:watch": "nodemon --watch lib --exec babel-node lib/index.js",
-    "start:production": "node dist/index.js"
+    "start:production": "node dist/index.js",
+    "flow": "flow"
   },
   "dependencies": {
     "apollo-server-restify": "^1.2.0",
@@ -21,7 +22,9 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.12.1",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
