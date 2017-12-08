@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+      }
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "no-console": 1
+  }
+}
