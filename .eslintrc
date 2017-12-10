@@ -11,7 +11,7 @@
   "extends": ["eslint:recommended", "plugin:flowtype/recommended"],
   "rules": {
     "quotes": ["warn", "single"],
-    "semi": ["warn", "never"],
+    "semi": ["warn", "always"],
     "no-console": 1
   }
 }

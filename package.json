@@ -10,7 +10,8 @@
     "start": "babel-node lib/server.js",
     "start:watch": "nodemon --watch lib --exec babel-node lib/server.js",
     "start:production": "node dist/server.js",
-    "flow": "flow"
+    "flow": "flow",
+    "flow-typed": "flow-typed"
   },
   "dependencies": {
     "apollo-server-restify": "^1.2.0",
@@ -29,6 +30,7 @@
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "^2.8.0",
     "flow-bin": "^0.60.1",
+    "flow-typed": "^2.2.3",
     "nodemon": "^1.12.4",
     "prettier": "^1.9.1",
     "prettier-eslint": "^8.2.5",
