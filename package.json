@@ -1,15 +1,15 @@
 {
   "name": "api-sample",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "author": "Takamichi-tsutsumi <takamichi_tsutsumi@waku-2.com>",
   "license": "MIT",
   "scripts": {
     "build": "babel lib -d dist",
     "build:clean": "rm -rf dist",
-    "start": "babel-node lib/index.js",
-    "start:watch": "nodemon --watch lib --exec babel-node lib/index.js",
-    "start:production": "node dist/index.js",
+    "start": "babel-node lib/server.js",
+    "start:watch": "nodemon --watch lib --exec babel-node lib/server.js",
+    "start:production": "node dist/server.js",
     "flow": "flow"
   },
   "dependencies": {
